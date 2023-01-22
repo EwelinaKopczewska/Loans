@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+body{
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 1100px;
+    height: 100vh;
+    margin:0 auto;
+}
+.menu__box{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+.menu__logo{
+    display: flex;
+    flex-grow: 1;
+}
+.menu__logo a{
+    color: var(--main-color);
+    font-size:2.5rem;
+    font-weight:bold;
+}
+.menu__point:not(:last-child) a{
+    margin-right:40px;
+}
+
+/* Main */
+
+
+.main__box{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+.into__info{
+    max-width: 600px;
+    height:417px;
+}
+.into__text{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.into__title{
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom:60px;
+}
+.icons__list{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight:600;
+}
+.icons__item{
+    margin-right: 20px;
+}
+.icons__item:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--accent-color);
+    display: flex;
+    padding-bottom: 10px;
+}
+.icons__item:first-child:before{
+    content: "\f0c2";
+}
+.icons__item:nth-child(2):before{
+    content: "\f3d1";
+}
+.icons__item:last-child:before{
+    content: "\f2f2";
+}
+
+
+
+
+
+
+.intro__form{
+    width: auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .13);
+    padding:30px;
+}
+.form__title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+label{
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-top:12px;
+}
+.form__intro{
+    border-top:none;
+    border-right:none;
+    border-left: none;
+    margin-top:12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid lightgray;
+}
+input::placeholder{
+    padding-bottom: 8px;
+    color: lightgray;
+}
+
+.btn{
+    border: none;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    padding:20px 30px;
+    color: white;
+    font-size: 1,1rem;
+    font-weight: 600;
+    margin-top:40px;
+    cursor: pointer;
+}
